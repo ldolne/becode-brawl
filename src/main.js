@@ -1,9 +1,11 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import Test from "./components/Test.vue";
+import Player from "./components/Player.vue";
 
-createApp(App)
-  .use(store)
-  .use(router)
-  .mount("#app");
+const app = createApp(App);
+
+app.component('test', Test);
+app.component('player', Player);
+
+app.mount("#app");
