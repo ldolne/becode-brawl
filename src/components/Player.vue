@@ -1,13 +1,13 @@
 <template>
   <div class="player">
-    <h2>{{ character[0].name }}</h2>
+    <h2>{{ characters[0].name }}</h2>
     <h3>POWER</h3>
     <div class="carousel">
       <button>left</button>
       <div class="img-box">
         <!-- NIQUE SA MERE VUE -->
-        <img src="../../public/leny.png" />
-        <img :src="character[0].url" alt="leny" />
+        <!-- <img src="../../public/leny.png" /> -->
+        <img :src="characters[0].img" alt="leny" />
       </div>
       <button>right</button>
     </div>
@@ -15,15 +15,15 @@
 </template>
 
 <script>
-import { ref } from "vue";
 export default {
-  setup() {
-    let character = ref([{ name: "leny", url: "../../public/leny.png" }]);
-    let img = [{ img: "../../public/leny.png" }];
-    console.log(img);
+  data() {
     return {
-      character,
-      img
+      characters: [
+        {
+          name: "Leny",
+          img: "./src/assets/leny.png"
+        }
+      ]
     };
   }
 };
