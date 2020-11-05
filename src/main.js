@@ -5,7 +5,7 @@ import Player from "./components/Player.vue";
 
 const app = createApp(App);
 
-app.component('test', Test);
-app.component('player', Player);
+app.component("test", Test);
+app.component("player", Player);
 
 app.mount("#app");

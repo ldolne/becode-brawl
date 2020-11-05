@@ -7,7 +7,7 @@
 
 <style lang="scss">
 body {
-  background-image: url('assets/test.svg');
+  background-image: url("assets/test.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

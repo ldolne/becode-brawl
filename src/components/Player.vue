@@ -15,17 +15,17 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref } from "vue";
 export default {
   setup() {
-    let character = ref([{ name: 'leny', url: '../../public/leny.png' }]);
-    let img = [{ img: '../../public/leny.png' }];
+    let character = ref([{ name: "leny", url: "../../public/leny.png" }]);
+    let img = [{ img: "../../public/leny.png" }];
     console.log(img);
     return {
       character,
-      img,
+      img
     };
-  },
+  }
 };
 </script>
 
