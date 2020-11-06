@@ -7,7 +7,7 @@ import Player from "./components/Player.vue";
 const app = createApp(App);
 
 app.component("selection-screen", SelectionScreen);
-app.component("battle-screen", BattleScreen);
 app.component("player", Player);
+app.component("battle-screen", BattleScreen);
 
 app.mount("#app");
